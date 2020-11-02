@@ -1,2 +1,3 @@
 # Project_1
-copied over project from the original repo. Please view the original project at Lromero5/liveEvents and https://lromero5.github.io/liveEvents/
+First project for the Northwestern Full Stack Bootcamp at Lromero5/liveEvents and https://lromero5.github.io/liveEvents/.
+You can also find it and all my other school projects starred on my account.
