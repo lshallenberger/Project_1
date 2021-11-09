@@ -1,0 +1,166 @@
+/* This code is incorporating flex box */
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* sets the padding of anything inside of the wrapper */
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+/* setting the header color */
+/* .header {
+  background: lightgrey;
+} */
+
+/* setting the footer color */
+/* .footer {
+  background: lightgrey;
+} */
+
+/* button */
+.buttoncontainer {
+  text-align: center;
+  ;
+}
+
+/* the class for the map container */
+.map-container {
+  height: 25%;
+  width: 100%;
+  min-height: 500px;
+  background: grey;
+  padding: 10px;
+}
+
+/* this is setting the map and the results stacked  */
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  padding: 2em;
+}
+
+/* end of NEW CODE */
+html {
+background-color: transparent;
+background-blend-mode: soft-light;
+background-image: url('./media/night-sky.jpg') !important;
+background-position: center;
+background-size: cover;
+}
+body {
+background-color: transparent;
+color: white;
+ }
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+  text-align: center;
+}
+
+.image {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#linedsax {
+  display: block;
+}
+
+#sax {
+  display: none;
+}
+
+.image-container:hover #linedsax {
+  display: none
+}
+
+.image-container:hover #sax {
+  display: block;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.fa-user:hover {
+  src: "saxophone.png";
+}
+
+.col-sm-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 2rem;
+}
+
+.event-card {
+  padding: 5px;
+  background: #ffffffe6;
+
+  border-radius: 2px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin: 10px;
+  font-size: small;
+}
+a {
+  color: #2e1149;
+}
+#eventList {
+  padding: 0 32px;
+}
+
+.image {
+  width: 84px;
+  height: 84px;
+}
+
+.image-container {
+  padding: 24px 0 8px 0;
+}
+
+.title {
+  margin: 0 0 32px 0;
+} 
+
+/* the media query kicks in when the screen is large */
+@media screen and (min-width: 800px) {
+  .buttoncontainer {
+    flex: 3 0px;
+  }
+  .map-container {
+    order: 1;
+    width: 100%;
+  }
+  .buttoncontainer {
+    order: 2;
+  }
+  .results-container {
+    order: 3;
+  }
+
+  .footer {
+    order: 4;
+  }
+
+  .content-container {
+    flex-direction: row;
+  }
+  
+  #map {
+    width: 100%;
+    height: 25%;
+  }
+}
+/* media query ends */
